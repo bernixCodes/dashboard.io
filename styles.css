@@ -25,5 +25,43 @@ nav {
 }
 
 .right {
-  background-color: brown;
+  background-color: rgb(236, 246, 247);
+  display: block;
+  padding: 10%;
+  color: white;
+
+}
+
+.card {
+  background-color: #ddb8e4;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 15%;
+  border-radius: 5%;
+  padding-top: 15px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.dot-icon {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.info {
+  display: flex;
+  gap: 4px;
+}
+
+.card1 {
+  background-color: #a62fbe;
+}
+
+.card2 {
+  background-color: rgb(250, 184, 3);
+}
+
+.card3 {
+  background-color: rgb(239, 30, 113);
 }
