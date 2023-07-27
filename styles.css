@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 nav {
@@ -17,7 +18,9 @@ nav {
 }
 
 .left {
-  background-color: rosybrown;
+  background-color: white;
+  padding: 1rem;
+  color: gray;
 }
 
 .middle {
@@ -27,3 +30,73 @@ nav {
 .right {
   background-color: brown;
 }
+
+h3{
+  font-size: 0.87rem ;
+}
+
+h4{
+  font-size:0.8rem;
+
+}
+
+.aside{
+  height: 100vh;
+}
+
+.left .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.4rem;
+}
+
+.con-content{
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+  
+}
+
+.mid-content {
+  margin-top: 20px;
+
+}
+
+.list-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.items-cont{
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.bot-content{
+  margin-top: 20px;
+}
+
+.message-box {
+  /* background-color: rgb(118, 118, 212); */
+  padding: 0.2rem 0.5rem;
+  font-size: 12px;
+  border-radius: 0.5rem;
+  color: white;
+
+}
+
+.badge-blue{
+  background-color: rgb(66, 66, 201);
+}
+
+.badge-purple{
+  background-color:rgb(206, 101, 118);
+}
+
+
