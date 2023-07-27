@@ -3,22 +3,386 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Core Ui Dashboard</title>
+    <link rel="icon" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
   </head>
   <body>
-    <!-- Bernice -->
-    <nav></nav>
+  <div class="main-container">
+      <!-- Bernice -->
+      <nav>
+        <div class="logoContainer">
+            <img src="./images/logo.png" class="logo" alt=""/>
+           <div class="arrow-left">
+            <span class="icon material-icons-outlined ">chevron_left</span>
+           </div>
+        </div>
+       <div class="nav-essentials">
+        <div class="searchBox">
+            <span class="icon material-icons-outlined">search </span>
+            <input type="search" placeholder="Search..."/>
+        </div>
+        <div class="nav-icons">
+            <div class="nav-icon">
+                <span class="icon material-icons-outlined">notifications </span>
+                <div class="red-circle"></div>
+            </div>
+            <div class="nav-icon">
+                <span class="icon material-icons-outlined">ballot </span>
+                <div class="red-circle"></div>
+            </div>
+            <div class="nav-icon">
+                <span class="icon material-icons-outlined">drafts </span>
+                <div class="red-circle"></div>
+            </div>
+            <div class="nav-icon">
+               <img  src="./images/user1.jpg" alt="" />
+                <div class="img-circle success"></div>
+            </div>
+            <div class="nav-icon">
+                <span class="icon material-icons-outlined">dashboard_customize </span>
+            </div>
+        </div>
+       </div>
+    </nav>
 
     <div class="container">
       <!-- Tiana -->
       <div class="left"></div>
 
       <!-- Bernice -->
-      <div class="middle"></div>
+      <div class="middle">
+        <div class="mid-header">
+            <div class="mid-header-left">
+                <h2>Users</h2>
+                <p>1.232.150 registered users</p>
+            </div>
+            <div class="mid-header-right">
+                <span class="material-icons-outlined">  person_add_alt </span>
+                <p>Add new user</p>
+            </div>
+        </div>
+
+        <!-- data-section -->
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <span class="material-icons-outlined"> people_alt </span>
+                    </th>
+                    <th>User</th>
+                    <th>Country</th>
+                    <th>Usage</th>
+                    <th>Activity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user1.jpg" alt="" />
+                             <div class="img-circle success"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Yiorgos Avraamu</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag2.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 50%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress50"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline">10 sec ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user6.jpg" alt="" />
+                             <div class="img-circle danger"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Avram Tasarious</h3>
+                            <p>Recurring | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag1.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 10%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress10"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline">5 minutes ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user7.jpg" alt="" />
+                             <div class="img-circle success"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Quintin Ed</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag3.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 74%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress74"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline">1 hour ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user3.jpg" alt="" />
+                             <div class="img-circle success"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Quintin Ed</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag2.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 98%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress98"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline">6 days ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user4.jpg" alt="" />
+                             <div class="img-circle warning"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Quintin Ed</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag3.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 45%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress45"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline"> 20 hours ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user1.jpg" alt="" />
+                             <div class="img-circle danger"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Quintin Ed</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag6.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 15%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress43"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline">Yesterday</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user1.jpg" alt="" />
+                             <div class="img-circle success"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Yiorgos Avraamu</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag2.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 50%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress50"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline">10 sec ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-icon">
+                            <img  src="./images/user4.jpg" alt="" />
+                             <div class="img-circle warning"></div>
+                         </div>
+                    </td>
+                    <td>
+                        <div class="user-details">
+                            <h3>Quintin Ed</h3>
+                            <p>New | Registered: Jan 1, 2020</p>
+                        </div>
+                    </td>
+
+                    <td>
+                        <img  class="table-flag" src="./images/flags/flag3.gif" alt=""/>
+                    </td>
+
+                    <td>
+                      <div class="usageContainer">
+                        <p><span class="percentage"> 45%</span> Jun 11, 2020 - Jul 10, 2020</p>
+                        <div class="progress-bar">
+                            <div class="progress45"></div>
+                         </div>
+                        </div>
+                      </div>
+                    </td>
+
+                    <td>
+                        <p>Last login</p>
+                        <p class="timeline"> 20 hours ago</p>
+                    </td>
+                    <td>
+                        <span class="material-icons-outlined action">more_vert</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
 
       <!-- Blessing -->
       <div class="right"></div>
     </div>
+  </div>
   </body>
 </html>
