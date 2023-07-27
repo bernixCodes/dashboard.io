@@ -119,7 +119,7 @@ img{
   height: calc(100vh - 80px);
   background-color: #f1f4f9;
   gap: 30px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .left {
@@ -519,6 +519,7 @@ td{
    }
    .container {
      gap: 10px;
+     grid-template-columns: 18% auto 18%;
    }
    td{
      padding: 5px !important;
