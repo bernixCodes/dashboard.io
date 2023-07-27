@@ -482,6 +482,37 @@ td{
  
  }
  
+
+@media screen and (min-width:768px ) and (max-width:1114px) {
+  .right,  .searchBox, .arrow-left{
+   display: none;
+  }
+  .container {
+   grid-template-columns: 10% auto;
+   gap: 1px;
+ }
+ .items-cont h3, .list-items span, h4{
+  display: none;
+}
+.items-cont span{
+  display: block;
+}
+  .middle{
+   overflow-x: hidden;
+  }
+  .user-details p, .usageContainer p, .timeline, .lastLogin{
+   font-size: 1.02rem;
+ }
+ td{
+   padding: 5px !important;
+  }
+  .nav-icons{
+   position: absolute;
+   right: 10px;
+  }
+ 
+ }
+ 
  @media screen and (min-width: 1280px) and (max-width: 1400px) {
    .user-details p, .usageContainer p, .timeline, .lastLogin{
      font-size: 1.02rem;
