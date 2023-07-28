@@ -483,7 +483,7 @@ td{
  }
  
 
-@media screen and (min-width:768px ) and (max-width:1114px) {
+@media screen and (min-width:768px ) and (max-width:1279px) {
   .right,  .searchBox, .arrow-left{
    display: none;
   }
